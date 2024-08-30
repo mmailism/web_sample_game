@@ -152,7 +152,7 @@ section{
         align-items: center;
         gap: 2rem;
         min-height: 100vh;
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
 
         .image{
             flex: 1 1 40rem;
@@ -245,6 +245,9 @@ body{
         a{
             font-size: 4rem;
         }
+    }
+    .home .flex .content h3{
+        font-size: 3.5rem;
     }
 }
 
