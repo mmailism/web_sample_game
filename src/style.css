@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=SUSE:wght@100..800&display=swap');
+
+:root{
+    --main-color:#e056fd;
+    --black:#090029;
+    --white:#fff;
+    --bg-color:#14074B;
+    --light-white:rgba(255,255,255, .8);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0, .3);
+    --border:.2rem solid rgba(255,255,255, .1);
+}
+
+*{
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'SUSE', system-ui;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--white);
+}
+
+body{
+    background: var(--black);
+}
+
+section{
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--main-color);
+    border-radius: 1rem;
+    border: .2rem solid var(--main-color);
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    background: none;
+    transition: .2s linear;
+    position: relative;
+    z-index: 1;
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0; left: 0;
+        height: 100%;
+        width: 0;
+        background: var(--main-color);
+        z-index: -1;
+        transition: .2s linear;
+    }
+    &:hover{
+        color: var(--white);
+    }
+    &:hover::before{
+        width: 100%;
+        left: 0;
+    }
+}
+
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+
+    .flex{
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo{
+            font-size: 2rem;
+            color: var(--white);
+
+            i{
+                margin-right: .5rem;
+                color: var(--main-color);
+            }
+        }
+        .navbar a{
+            margin: 0 1.5rem;
+            font-size: 1.8rem;
+            color: var(--light-white);
+
+            &:hover{
+                color: var(--main-color);
+            }
+        }
+    }
+}
