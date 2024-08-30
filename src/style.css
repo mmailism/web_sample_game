@@ -66,6 +66,7 @@ section{
     transition: .2s linear;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 
     &::before{
         content: '';
@@ -91,6 +92,10 @@ section{
     top: 0; left: 0; right: 0;
     z-index: 1000;
 
+    &.active{
+        background: var(--bg-color);
+        box-shadow: var(--box-shadow);
+    }
     .flex{
         padding: 2rem;
         display: flex;
@@ -115,5 +120,136 @@ section{
                 color: var(--main-color);
             }
         }
+        .btn{
+            margin-top: 0;
+        }
+    }
+}
+
+#menu-btn{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 10000;
+    background: var(--main-color);
+    color: var(--white);
+    height: 4.5rem;
+    width: 5rem;
+    line-height: 4.4rem;
+    font-size: 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    display: none;
+}
+
+.home{
+    background: url(/img/home-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    .flex{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        min-height: 100vh;
+        flex-wrap: wrap;
+
+        .image{
+            flex: 1 1 40rem;
+
+            img{
+                width: 100%;
+            }
+        }
+        .content{
+            flex: 1 1 40rem;
+
+            h3{
+                font-size: 6rem;
+                color: var(--white);
+                text-transform: uppercase;
+
+                span{
+                    color: var(--main-color);
+                    text-transform: uppercase;
+                }
+            }
+            p{
+                font-size: 1.6rem;
+                color: var(--light-white);
+                padding: 1rem 0;
+                line-height: 1.8;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    height: 1000rem;
+}
+
+
+/* ===== media queries ===== */
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width:768px){
+    #menu-btn{
+        display: inline-block;
+    }
+    .header .flex .navbar{
+        position: fixed;
+        top: 0; left: -120%;
+        height: 100vh;
+        width: 100%;
+        z-index: 2000;
+        background: var(--black);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        flex-flow: column;
+        transition: .2s linear;
+
+        &.active{
+            left: 0;
+        }
+        a{
+            font-size: 4rem;
+        }
+    }
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
     }
 }
