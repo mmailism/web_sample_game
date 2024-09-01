@@ -273,7 +273,31 @@ section{
     }
 }
 
+.top-games .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 27rem);
+    row-gap: 3rem;
+    align-items: flex-start;
+    justify-content: center;
 
+    .box{
+        height: 35rem;
+        border-radius: .5rem;
+        overflow: hidden;
+        position: relative;
+
+        img{
+            height: 95%;
+            width: 85%;
+            object-fit: cover;
+            transform: .2s var(--light-white);
+        }
+
+        &::before{
+            content: 'play now';
+        }
+    }
+}
 
 
 
