@@ -53,6 +53,8 @@ section{
     margin: 0 auto;
 }
 
+
+
 .btn{
     display: inline-block;
     margin-top: 1rem;
@@ -84,6 +86,19 @@ section{
     &:hover::before{
         width: 100%;
         left: 0;
+    }
+}
+
+.heading{
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--white);
+    text-transform: uppercase;
+
+    span{
+        color: var(--main-color);
+        text-transform: uppercase;
     }
 }
 
@@ -143,7 +158,7 @@ section{
 }
 
 .home{
-    background: url(/img/home-bg.jpg) no-repeat;
+    background: url(/img/home-bg.webp) no-repeat;
     background-position: center;
     background-size: cover;
     
@@ -184,8 +199,37 @@ section{
     }
 }
 
+.features .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
 
+    .box{
+        background-position: center !important;
+        background-size: cover !important;
+        text-align: center;
+        padding: 6rem 3rem;
+        box-shadow: var(--box-shadow);
 
+        img{
+            height: 15rem;
+            width: 100%;
+            object-fit: contain;
+        }
+        h3{
+            margin: 1.5rem 0;
+            font-size: 3rem;
+            color: var(--white);
+        }
+        p{
+            line-height: 1.8;
+            font-size: 1.6rem;
+            color: var(--light-white);
+        }
+    }
+}
 
 
 
