@@ -29,6 +29,7 @@ html{
     scroll-behavior: smooth;
     scroll-padding-top: 9rem;
     overflow-x: hidden;
+    height: 100vh;
 }
 
 ::-webkit-scrollbar{
@@ -315,12 +316,95 @@ section{
             transform: scale(1);
         }
     }
-    
 }
 
+.info-container{
+    background-color: var(--bg-color);
 
+    .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 26rem);
+        gap: 2rem;
+        align-items: flex-start;
+        justify-content: center;
 
+        .box{
+            text-align: center;
 
+            img{
+                height: 10rem;
+                width: 100%;
+                object-fit: contain;
+            }
+            h3{
+                margin-top: 1.5rem;
+                font-size: 2rem;
+                color: var(--light-white);
+            }
+        }
+    }
+}
+
+.pricing .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 26rem);
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+
+    .box{
+        border: var(--border);
+        border-radius: .5rem;
+        padding: 2.5rem;
+
+        h3{
+            font-size: 2.5rem;
+            padding-bottom: 1.5rem;
+            color: var(--white);
+            border-bottom: var(--border);
+        }
+        .amount{
+            font-size: 3.5rem;
+            margin: 1.5rem 0;
+            text-align: center;
+            color: var(--main-color);
+
+            span{
+                font-size: 2.5rem;
+                color: var(--white);
+            }
+        }
+        .date{
+            font-size: 1.7rem;
+            color: var(--light-white);
+            border-radius: .5rem;
+            text-align: center;
+            background-color: var(--bg-color);
+            padding: .8rem;
+            border: var(--border);
+        }
+        .list{
+            padding: 1rem 0;
+            margin-top: 1rem;
+
+            p{
+                font-size: 1.6rem;
+                color: var(--light-white);
+                padding: 1rem 0;
+
+                i{
+                    margin-right: 1rem;
+                }
+                .fa-check{
+                    color: lime;
+                }
+                .fa-xmark{
+                    color: tomato;
+                }
+            }
+        }
+    }
+}
 
 
 
