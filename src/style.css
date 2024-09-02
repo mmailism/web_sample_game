@@ -412,6 +412,25 @@ section{
     background-position: center;
     background-attachment: fixed;
     background-blend-mode: multiply;
+
+    .box-container{
+        display: grid;
+        gap: 2rem;
+
+        .box{
+            border: var(--border);
+            border-radius: .5rem;
+            padding: 2rem;
+            box-shadow: var(--box-shadow);
+
+            .title{
+                display: flex;
+                justify-content: space-between;
+                gap: 1rem;
+                cursor: pointer;
+            }
+        }
+    }
 }
 
 
