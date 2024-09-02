@@ -29,11 +29,11 @@ html{
     scroll-behavior: smooth;
     scroll-padding-top: 9rem;
     overflow-x: hidden;
-    height: 100vh;
+    height: 100%;
 }
 
 ::-webkit-scrollbar{
-    width: 1rem;
+    width: .5rem;
 }
 
 ::-webkit-scrollbar-track{
@@ -46,6 +46,8 @@ html{
 
 body{
     background: var(--black);
+    height: 100%;
+    margin: 0;
 }
 
 section{
@@ -426,6 +428,7 @@ section{
             .title{
                 display: flex;
                 justify-content: space-between;
+                /* align-items: center; */
                 gap: 1rem;
                 cursor: pointer;
                 color: var(--white);
