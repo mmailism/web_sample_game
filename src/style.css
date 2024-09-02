@@ -406,6 +406,14 @@ section{
     }
 }
 
+.faq{
+    background: url(/img/faq-bg.jpg), linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+}
+
 
 
 
