@@ -527,6 +527,23 @@ section{
             font-size: 2rem;
             text-transform: none;
         }
+        .input:focus, textarea:focus{
+            border-color: var(--main-color);
+            transition: .2s linear;
+        }
+        .input::placeholder, textarea::placeholder{
+            text-transform: capitalize;
+        }
+        textarea{
+            height: 20rem;
+            width: 100%;
+            margin-top: 1.5rem;
+            margin-bottom: .5rem;
+            resize: none;
+        }
+        .btn:hover{
+            background-color: var(--main-color);
+        }
     }
 }
 
