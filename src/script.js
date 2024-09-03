@@ -1,15 +1,6 @@
 let navbar = document.querySelector('.header .flex .navbar');
 let menuBtn = document.querySelector('#menu-btn');
-let header = document.querySelector('.header')
-
-// window.addEventListener('resize', function() {
-//     document.querySelector('body').style.minHeight = window.innerHeight + 'px';
-// });
-
-// document.addEventListener('DOMContentLoaded', function() {
-//     document.querySelector('body').style.minHeight = window.innerHeight + 'px';
-// });
-
+let header = document.querySelector('.header');
 
 menuBtn.onclick = () =>{
     navbar.classList.toggle('active');
