@@ -462,6 +462,75 @@ section{
     }
 }
 
+.contact{
+    .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 35rem);
+        gap: 2rem;
+        align-items: flex-start;
+        justify-content: center;
+
+        .box{
+            background-size: cover !important;
+            background-position: center !important;
+            padding: 8rem 10rem 0rem 10rem;
+            box-shadow: var(--box-shadow);
+        }
+        .box:nth-child(2){
+            text-align: center;
+        }
+        .box:nth-child(3){
+            text-align: right;
+        }
+        img{
+            height: 12rem;
+            width: 12rem;
+            margin-bottom: 12rem;
+        }
+        h3{
+            margin: 1.5rem 0;
+            font-size: 2.5rem;
+            color: var(--white);
+        }
+        a{
+            display: block;
+            text-transform: none;
+            color: var(--light-white);
+            font-size: 1.7rem;
+            line-height: 1.8;
+
+            &:hover{
+                text-decoration: underline;
+                color: var(--main-color);
+            }
+        }
+    }
+    .form{
+        margin-top: 2rem;
+        text-align: center;
+
+        .flex{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+
+            .input{
+                flex: 1 1 40rem;
+            }
+        }
+        .input, textarea{
+            background: none;
+            color: var(--white);
+            border: var(--border);
+            border-radius: .5rem;
+            padding: 1.6rem;
+            font-size: 2rem;
+            text-transform: none;
+        }
+    }
+}
+
+
 
 
 
