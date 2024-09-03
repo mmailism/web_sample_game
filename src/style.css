@@ -42,6 +42,36 @@ html{
 
 ::-webkit-scrollbar-thumb{
     background: var(--white);
+}html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+::-webkit-scrollbar{
+    width: .5rem;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--white);
+}
+
+body{
+    background: var(--black);
+    height: 100%;
+    margin: 0;
+}
+
+section{
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 body{
@@ -547,7 +577,33 @@ section{
     }
 }
 
+.footer{
+    background: url(/img/footer-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
 
+    .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 30rem);
+        gap: 3rem;
+        align-items: flex-start;
+        justify-content: center;
+
+        .box{
+            h3{
+                font-size: 2rem;
+                color: var(--main-color);
+                margin-bottom: 1rem;
+            }
+        }
+        .box:last-child{
+            text-align: right;
+        }
+        .box:nth-child(2){
+            text-align: center;
+        }
+    }
+}
 
 
 
