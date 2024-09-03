@@ -92,7 +92,7 @@ section{
     display: inline-block;
     margin-top: 1rem;
     color: var(--main-color);
-    border-radius: 1rem;
+    border-radius: 3rem;
     border: .2rem solid var(--main-color);
     font-size: 1.8rem;
     padding: 1rem 3rem;
