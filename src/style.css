@@ -243,21 +243,23 @@ section{
         background-position: center !important;
         background-size: cover !important;
         text-align: center;
-        padding: 6rem 3rem;
+        padding: 3rem 3rem;
         box-shadow: var(--box-shadow);
 
         img{
             height: 15rem;
             width: 100%;
             object-fit: contain;
+            margin: 3rem 0;
         }
         h3{
-            margin: 1.5rem 0;
+            margin: 1.5rem 2rem;
             font-size: 3rem;
             color: var(--white);
         }
         p{
             line-height: 1.8;
+            margin-top: 2rem;
             font-size: 1.6rem;
             color: var(--light-white);
         }
@@ -503,7 +505,7 @@ section{
         .box{
             background-size: cover !important;
             background-position: center !important;
-            padding: 8rem 10rem 0rem 10rem;
+            padding: 8rem 10rem 2rem 10rem;
             box-shadow: var(--box-shadow);
         }
         .box:nth-child(2){
@@ -515,7 +517,7 @@ section{
         img{
             height: 12rem;
             width: 12rem;
-            margin-bottom: 12rem;
+            margin-bottom: 2rem;
         }
         h3{
             margin: 1.5rem 0;
